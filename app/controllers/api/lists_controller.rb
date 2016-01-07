@@ -11,4 +11,5 @@ class Api::ListsController < ApiController
     else
       render json: { errors: list.errors.full_messages} , status: :unprocessable_entity
     end
+  end
 end
